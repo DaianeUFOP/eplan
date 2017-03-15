@@ -89,4 +89,11 @@ public class SemantTest {
            "error.CompilerError: 1/33-1/34 undefined variable 'x'");
    }
 
+   @Test
+   public void testeassign(){
+
+      trun(" a := 10", INT.T);
+      trun(" a := 2+3", INT.T);
+      trun(" a := true", BOOL.T);
+   }
 }
